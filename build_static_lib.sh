@@ -1,13 +1,6 @@
-MP_DIR="micropython"
 MP_EMBED_DIR="micropython_embed"
 BUILD_DIR="build"
 CMAKE_OPTS=
-
-if [ ! -d "${MP_DIR}" ]; then
-    echo "getting micropython as a git submodule"
-    git submodule init
-    git submodule update
-fi
 
 
 if [ ! -d "${MP_EMBED_DIR}" ]; then

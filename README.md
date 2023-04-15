@@ -20,20 +20,26 @@ The README for that folder is given below.
 
 Do **NOT** clone recursively. 
 
+2. Get the micropython submodule
 
-2. Get the micropython submodule and build the shared lib and exe case: 
+```bash
+git submodule init
+git submodule update
+```
+
+3. Build the shared lib and exe case: 
 
 ```bash
 ./build_shared_lib
 ```
 
-3. To build static lib and exe case instead:
+4. To build static lib and exe case instead:
 
 ```bash
 ./build_static_lib
 ```
 
-**Important note**: both (2) and (3) can be run independently or in sequence if you want to build both. Looking at the contents of the short scripts is informative.
+**Important note**: both (3) and (4) can be run independently or in sequence if you want to build both. Looking at the contents of the short scripts is informative.
 
 
 ## micropython embedding README
