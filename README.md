@@ -1,6 +1,6 @@
-# embedded-micropython-cmake
+# micropython-embed-cmake example
 
-An attempt to embed micropython using static and shared libs with cmake.
+An example to illustrate how to embed micropython using static and shared libs with cmake.
 
 Currently only tested on macOS.
 
