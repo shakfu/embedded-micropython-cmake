@@ -4,15 +4,14 @@ An attempt to embed micropython using static and shared libs with cmake.
 
 Currently only tested on macOS.
 
-This folder is  basically the same as `micropython/examples/embedding`.
+This folder is basically the same as `micropython/examples/embedding` with a couple of scripts and the addition of a `CMAkeLists.txt` file.
 
 The README for that folder is given below.
 
 ## Status
 
-- [x] build exe
-- [x] build shared lib
-- [x] build static lib
+- [x] build shared lib and dependent exe
+- [x] build static lib and dependent exe
 
 
 ## Usage
@@ -22,25 +21,19 @@ The README for that folder is given below.
 Do **NOT** clone recursively. 
 
 
-2. Get the `micropython` submodule
-
-```
-git submodule init
-git submodule update
-
-```
-
-3. To build shared lib case and exe: 
+2. Get the micropython submodule and build the shared lib and exe case: 
 
 ```bash
 ./build_shared_lib
 ```
 
-4. To build static lib case and exe:
+3. To build static lib and exe case instead:
 
 ```bash
 ./build_static_lib
 ```
+
+**Important note**: both (2) and (3) can be run independently or in sequence if you want to build both. Looking at the contents of the short scripts is informative.
 
 
 ## micropython embedding README
@@ -73,7 +66,6 @@ That will create an exacutable called `embed` which you can run:
     $ ./embed
 
 #### Out of tree build
-
 
 This example is set up to work out of the box, being part of the MicroPython
 tree.  Your application will be outside of this tree, but the only thing you
