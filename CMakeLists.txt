@@ -6,8 +6,8 @@ include(CTest)
 
 set(EMBED_DIR "micropython_embed")
 
-set(MPY_EXE "mpe.exe")
-set(MPY_LIB "mpy")
+set(MPY_EXE "${PROJECT_NAME}.exe")
+set(MPY_LIB ${PROJECT_NAME})
 
 set(MPY_COMPILE_OPTIONS
 	-Wall 
